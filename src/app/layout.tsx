@@ -7,10 +7,31 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
+const title = "Olivier Thorel — Project Hub";
+const description =
+  "A central access point for my portfolio, live products, experiments and technical playgrounds.";
+
 export const metadata: Metadata = {
-  title: "Olivier Thorel — Project Hub",
-  description:
-    "A central gateway to Olivier Thorel's portfolio, products, experiments and social links.",
+  metadataBase: new URL("https://othorel.fr"),
+  title,
+  description,
+  applicationName: "Olivier Thorel Hub",
+  authors: [{ name: "Olivier Thorel" }],
+  creator: "Olivier Thorel",
+  publisher: "Olivier Thorel",
+  openGraph: {
+    title,
+    description,
+    url: "https://othorel.fr",
+    siteName: "Olivier Thorel Hub",
+    type: "website",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary",
+    title,
+    description,
+  },
 };
 
 export default function RootLayout({

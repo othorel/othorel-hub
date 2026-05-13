@@ -1,5 +1,4 @@
 import { Code2, Globe2, Lock, Network, Sparkles } from "lucide-react";
-
 import type { HubProject, HubSocialLink } from "@/types/hub";
 
 export const hubProjects: HubProject[] = [
@@ -23,21 +22,12 @@ export const hubProjects: HubProject[] = [
   },
   {
     name: "Flexitaf",
-    href: "#",
+    href: "https://flexitaf.fr",
     description: "Confidential SaaS platform for recruitment, onboarding and automation.",
     status: "Private",
     tag: "Startup",
     theme: "emerald",
     icon: Lock,
-  },
-  {
-    name: "GitHub",
-    href: "https://github.com/othorel",
-    description: "Repositories, experiments, full-stack projects and technical work.",
-    status: "Open",
-    tag: "Code",
-    theme: "cyan",
-    icon: Code2,
   },
 ];
 

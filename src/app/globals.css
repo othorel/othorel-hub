@@ -164,13 +164,13 @@
 
   .glass-panel {
     background:
-      linear-gradient(135deg, oklch(1 0 0 / 10%), oklch(1 0 0 / 3%)),
-      oklch(0.145 0.018 265 / 72%);
-    border: 1px solid oklch(1 0 0 / 12%);
+      linear-gradient(135deg, oklch(1 0 0 / 13%), oklch(1 0 0 / 5%)),
+      oklch(0.135 0.018 265 / 92%);
+    border: 1px solid oklch(1 0 0 / 14%);
     box-shadow:
-      0 24px 80px oklch(0 0 0 / 38%),
-      inset 0 1px 0 oklch(1 0 0 / 12%);
-    backdrop-filter: blur(22px);
+      0 24px 80px oklch(0 0 0 / 46%),
+      inset 0 1px 0 oklch(1 0 0 / 14%);
+    backdrop-filter: blur(26px);
   }
 
   .noise-mask {
