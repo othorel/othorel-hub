@@ -9,7 +9,7 @@ const socialLinks = [
   },
   {
     label: "LinkedIn",
-    href: "https://www.linkedin.com/in/olivier-thorel",
+    href: "https://www.linkedin.com/in/olivier-thorel-24a87b158/",
     icon: FaLinkedin,
   },
 ];
