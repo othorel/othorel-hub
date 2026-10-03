@@ -1,38 +1,27 @@
-import Link from "next/link";
-import { FaGithub, FaLinkedin } from "react-icons/fa6";
-
-const socialLinks = [
-  {
-    label: "GitHub",
-    href: "https://github.com/othorel",
-    icon: FaGithub,
-  },
-  {
-    label: "LinkedIn",
-    href: "https://www.linkedin.com/in/olivier-thorel-24a87b158/",
-    icon: FaLinkedin,
-  },
-];
+import { ArrowUpRight } from "lucide-react";
+import { hubSocialLinks } from "@/config/hub";
 
 export function SocialLinks() {
   return (
-    <div className="flex flex-wrap gap-3">
-      {socialLinks.map((link) => {
+    <nav aria-label="Social links" className="flex items-center gap-1 sm:gap-2">
+      {hubSocialLinks.map((link) => {
         const Icon = link.icon;
 
         return (
-          <Link
+          <a
             key={link.label}
             href={link.href}
             target="_blank"
-            rel="noreferrer"
-            className="glass-panel group flex items-center gap-3 rounded-full px-5 py-3 text-sm font-medium text-muted-foreground transition duration-300 hover:-translate-y-0.5 hover:border-primary/40 hover:text-foreground"
+            rel="noopener noreferrer"
+            className="social-link flex min-h-11 items-center gap-1.5 rounded-lg px-2 text-xs sm:px-3 sm:text-sm"
           >
-            <Icon className="size-5 text-primary transition duration-300 group-hover:scale-110" />
+            <Icon aria-hidden="true" className="size-3.5 shrink-0" />
             {link.label}
-          </Link>
+            <ArrowUpRight aria-hidden="true" className="hidden size-3.5 shrink-0 sm:block" />
+            <span className="sr-only"> (opens in a new tab)</span>
+          </a>
         );
       })}
-    </div>
+    </nav>
   );
 }

@@ -1,19 +1,18 @@
 import type { LucideIcon } from "lucide-react";
-
-export type HubProjectTheme = "gold" | "violet" | "cyan" | "emerald";
+import type { IconType } from "react-icons";
 
 export type HubProject = {
   name: string;
   href: string;
   description: string;
-  status: string;
-  tag: string;
-  theme: HubProjectTheme;
+  category: string;
+  accent: "warm" | "violet" | "green" | "blue";
+  status?: "Private";
   icon: LucideIcon;
 };
 
 export type HubSocialLink = {
   label: string;
   href: string;
-  icon: LucideIcon;
+  icon: IconType;
 };

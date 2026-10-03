@@ -3,13 +3,13 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({
-  variable: "--font-sans",
+  variable: "--font-inter",
   subsets: ["latin"],
 });
 
 const title = "Olivier Thorel — Project Hub";
 const description =
-  "A central access point for my portfolio, live products, experiments and technical playgrounds.";
+  "Projects, products and applications by Olivier Thorel. Access Portfolio, SerieMatch, Flexitaf and Syntra from one place.";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://othorel.fr"),
@@ -40,7 +40,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={inter.variable}>
+    <html lang="en" className={`dark ${inter.variable}`}>
       <body>{children}</body>
     </html>
   );
